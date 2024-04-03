@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, {  } from "react";
 
 const Customcards = ({ header, text, bannerImage, pattern }) => {
-    if (pattern == 1)
+    if (pattern === 1)
         return (
             <div className="home-banner-container-custom-card" style={{ justifyContent: 'space-between', flex: 1 }}>
                 <div className="home-image-section-cutsom-card">

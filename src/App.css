@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -119,6 +119,7 @@ nav {
 }
 .home-banner-container-custom-card {
   position: relative;
+  /* border:'1px solid red'; */
   display: flex;
   justify-content: center;
   padding-top: 14rem;

@@ -2,14 +2,13 @@
 import React, { useState } from "react";
 // import Logo from "../Assets/Logo.svg";
 import List from "@mui/material/List";
-import { Box, Button, Drawer, Grid, IconButton, ListItem, ListItemButton, ListItemIcon, ListItemText, Stack, Typography } from '@mui/material'
-import useResponsive from "../hooks/useResponsive";
+import { Box, Drawer, Grid, ListItem, ListItemButton, ListItemText, Stack, Typography } from '@mui/material'
 import { HiOutlineBars3 } from "react-icons/hi2";
 
 import Divider from "@mui/material/Divider";
 
 const Navbar = () => {
-  const isDesktop = useResponsive("up", "md")
+  
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
@@ -27,10 +26,6 @@ const Navbar = () => {
       <Grid container spacing={2}>
         <Grid item md={4} xs={8}>
             <Stack direction="row" alignItems={"center"} spacing={2}>
-                {/* {!isDesktop && (
-                <IconButton>
-                    <List />
-                </IconButton>)} */}
                 <Typography variant='h7' style={{fontWeight:"400", fontSize:'14px', marginRight:"30px", color:"#111B47"}}>Home</Typography>
                 <Typography variant='h7' style={{fontWeight:"400", fontSize:'14px', marginRight:"30px", color:"#111B47"}}>About</Typography>
                 <Typography variant='h7' style={{fontWeight:"400", fontSize:'14px', marginRight:"30px", color:"#111B47"}}>Contact</Typography>
@@ -64,7 +59,6 @@ const Navbar = () => {
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
                 <ListItemButton>
-                  {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </ListItem>
