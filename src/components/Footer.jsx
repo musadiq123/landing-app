@@ -7,13 +7,13 @@ import { Grid, Stack, Typography } from "@mui/material";
 
 const Footer = () => {
   return (
-    <div style={{ flexDirection: 'column'  }}>
+    <div style={{ flexDirection: 'column', alignContent: 'center', alignSelf: 'center', textAlign: 'center', }}>
       <Grid container spacing={7} style={{ backgroundColor: '#E7ECFF', paddingLeft: 100, paddingRight: 100 }}>
         <Grid item md={4} xs={8}>
           <Typography variant='h7' style={{ fontWeight: "400", fontSize: '14px', marginRight: "30px", color: "#111B47" }}>©2023 Yourcompany</Typography>
 
         </Grid>
-        <Grid item md={3} xs={8} container justifyContent={"center"}>
+        <Grid item md={3} xs={8} container justifyContent={"center"} style={{alignContent: 'center', alignSelf: 'center', textAlign: 'center',}}>
           <Typography variant='h4' fontWeight={"900"} fontFamily="roboto">Landing</Typography>
 
         </Grid>

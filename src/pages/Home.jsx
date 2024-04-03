@@ -53,7 +53,7 @@ const Home = () => {
                 <Customcards header={Header_typo} text={Text_typo} bannerImage={BannerImage4} pattern={1} />
             </div>
 
-            <div className="home-banner-container-custom-card" style={{ marginLeft: 100, backgroundImage: `url(${BannerImage6})`, alignContent: 'center', alignSelf: 'center', textAlign: 'center', height: 800 }}>
+            <div className="home-banner-container-custom-card" style={{  backgroundImage: `url(${BannerImage6})`, alignContent: 'center', alignSelf: 'center', textAlign: 'center', height: 800 }}>
                 <div className="home-text-section-custom-card" >
                     <h1 className="primary-heading" style={{ fontSize: '36px', textAlign: 'center', alignSelf: 'center' }}>
                         A Price To Suit Everyone
