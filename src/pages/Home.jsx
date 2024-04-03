@@ -1,6 +1,4 @@
-import { Box, Button, Grid, IconButton, Stack, Typography } from '@mui/material'
 import React from 'react'
-import { List } from "@phosphor-icons/react";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -57,14 +55,13 @@ import Customcards from '../components/Customcards';
 const Header_typo = "Light, Fast & Powerful"
 const Text_typo = `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.`
-const header_text = "Light, Fast & Powerful"
 
 
 
 
 const Home = () => {
     return (
-        <div className="home-container" >
+        <div className="home-container" style={{gridTemplateColumns:'1fr'}}>
             <div style={{ marginLeft: 100, justifyContent: 'center', alignContent: 'center', flex: 1 }}>
             {/* <Header /> */}
             <Navbar />
@@ -78,8 +75,7 @@ const Home = () => {
                         Introduce Your Product Quickly & Effectively
                     </h1>
                     <p className="primary-text">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        {Text_typo}
                     </p>
                     <div style={{ flexDirection: 'row' }}>
                         <button className="secondary-button" style={{ marginRight: 10 }}>

@@ -27,10 +27,10 @@ const Navbar = () => {
       <Grid container spacing={2}>
         <Grid item md={4} xs={8}>
             <Stack direction="row" alignItems={"center"} spacing={2}>
-                {!isDesktop && (
+                {/* {!isDesktop && (
                 <IconButton>
                     <List />
-                </IconButton>)}
+                </IconButton>)} */}
                 <Typography variant='h7' style={{fontWeight:"400", fontSize:'14px', marginRight:"30px", color:"#111B47"}}>Home</Typography>
                 <Typography variant='h7' style={{fontWeight:"400", fontSize:'14px', marginRight:"30px", color:"#111B47"}}>About</Typography>
                 <Typography variant='h7' style={{fontWeight:"400", fontSize:'14px', marginRight:"30px", color:"#111B47"}}>Contact</Typography>
